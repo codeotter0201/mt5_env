@@ -97,13 +97,13 @@ fi
 # Install mt5linux library in Windows if not installed
 show_message "[6/7] Checking and installing mt5linux library in Windows if necessary"
 if ! is_wine_python_package_installed "mt5linux"; then
-    $wine_executable python -m pip install --no-cache-dir mt5linux --no-deps
+    $wine_executable python -m pip install --no-cache-dir mt5linux
 fi
 
 # Install mt5linux library in Linux if not installed
 show_message "[6/7] Checking and installing mt5linux library in Linux if necessary"
 if ! is_python_package_installed "mt5linux"; then
-    pip install --upgrade --no-cache-dir mt5linux --no-deps
+    pip install --upgrade --no-cache-dir mt5linux
 fi
 
 # Install pyxdg library in Linux if not installed
